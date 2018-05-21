@@ -5,6 +5,7 @@ import { canUseDOM } from 'exenv';
 import 'normalize.css';
 
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 import './index.css';
 
@@ -14,7 +15,7 @@ class TemplateWrapper extends Component {
       const WebFont = require('webfontloader');
       WebFont.load({
         google: {
-          families: ['Karla:400,700']
+          families: ['Robot Slab', 'Noto Serif', 'Open Sans', 'Noto Sans', 'Karla:400,700']
         }
       });
     }
@@ -23,10 +24,11 @@ class TemplateWrapper extends Component {
   render() {
     const { children } = this.props;
     return (
-      <div>
-        <Helmet title='Förändringen' />
+      <div className='site-container'>
+        <Helmet title='Förändringen AB' />
         <Navbar />
-        <div>{children()}</div>
+        <div className='page-container'>{children()}</div>
+        <Footer />
       </div>
     );
   }

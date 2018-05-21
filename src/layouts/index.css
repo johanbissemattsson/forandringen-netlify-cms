@@ -1,5 +1,414 @@
 body {
-  font-family: 'Karla', sans-serif;
-  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
   line-height: 1.5;
+  background: #faf3d1;/*#b8dfcb*/
+}
+
+h1, h2 {
+  font-family: 'Gastromond Regular';
+  line-height: 1.25;
+}
+
+h3 {
+  font-family: 'Open Sans';
+  font-size: 1.125em;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+a {
+  color: #e9468b;
+}
+.site-nav-container,
+.page-header,
+.content {
+  margin: auto;
+  max-width: 1440px;
+  padding: 0 7.5%;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .home-link {
+  flex: 1;
+  margin: 2em 0;
+}
+
+.site-nav .image {
+  margin: 0;
+}
+
+.site-nav .nav-item {
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #da748d;
+}
+
+.page-header-container {
+  position: relative;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 75vh;
+  position: relative;
+  z-index: 100;
+}
+
+.page-title {
+  font-size: 1.5em;
+}
+
+.header-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  z-index: 1;
+  pointer-events: none;
+  margin-bottom: -16px;
+}
+
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.page-title,
+.page-description {
+  width: 87%;
+  max-width: 570px;
+}
+
+.page-title {
+  margin-bottom: 0.5em;
+}
+
+.page-description {
+  margin-bottom: 2.5em;
+}
+
+.index .intro {
+  background: #ffe8bb;
+  padding: 3em 0 2em 0;
+}
+
+.intro p {
+  max-width: 720px;
+}
+
+.intro .intro-items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  font-size: 0.875em;
+  flex-wrap: wrap;
+  margin: 3em 0 0 0;
+}
+
+.intro .intro-items .intro-item {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 2em; 
+  text-align: center;
+  text-align-last: center; 
+  font-size: 0.875em;
+}
+
+.intro .intro-items .intro-image {
+  border-radius: 50%;
+  background: #ffe8bb;
+  max-width: 320px;
+}
+
+.intro .intro-items .intro-item img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.index .intro .content,
+.index .faq .content {
+  max-width: 1440px;
+}
+
+.index .faq { 
+  padding: 3em 0;
+}
+
+.faq p {
+  max-width: 720px;
+}
+
+.index .contact {
+  background: #fbffd3;
+  padding: 3em 0;
+}
+
+.index .contact .content {
+  background: #fbffd3;
+  max-width: 960px;
+}
+
+.index .contact .contact-form {
+  background: #faf3d1;
+  box-sizing: border-box;
+  padding: 0.5em 2em 1em 2em;
+  width: 100%;
+}
+
+.index .contact .contact-details {
+  box-sizing: border-box;
+  margin-top: 2em;
+  padding: 0 2em;
+}
+
+.index .contact .contact-details section {
+  flex: 1;
+  font-size: 0.875em;
+}
+
+.index .contact .contact-details section {
+  flex: 1;
+  font-size: 0.875em;
+}
+
+.index .contact .contact-details h3 {
+  font-size: 0.875em;
+}
+
+.index .contact .contact-details p {
+  margin-top: 0;
+}
+
+.site-footer-container {
+  background: #e9468b;
+  display: flex;
+}
+
+.site-footer {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 7.5%;
+  margin: 1.5em auto;
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.site-footer strong {
+  color: rgba(255, 255, 255, 1);
+}
+
+.site-footer nav {
+  display: flex;
+}
+
+.site-footer .site-info {
+  font-size: 0.75em;
+  color: rgba(255, 255, 255, 0.825);
+}
+
+.site-footer .site-info .site-description {
+  max-width: 720px;
+  padding-right: 2em;
+}
+
+.site-footer .site-info .site-contact {
+  max-width: 360px;
+  display: flex;
+}
+
+.site-footer .site-info .site-contact .email,
+.site-footer .site-info .site-contact .phone {
+  padding: 0 3em 0 0;
+  line-height: 1.5;
+}
+
+.site-footer .site-info h2 {
+  font-size: 1em;
+  font-family: inherit;
+  margin: 1em 0 0 0;
+}
+
+
+.site-footer .site-info > * {
+  box-sizing: border-box;
+}
+
+.site-footer .home-link .image {
+  width: 160px;
+  margin: 0;
+}
+
+.social-links {
+  margin-left: auto;
+}
+
+.site-nav .social-links {
+  padding-left: 2em;
+} 
+
+.social-links .social-icon {
+  width: 32px;
+  height: 32px;
+  margin-left: 0.5em;
+}
+
+.scroll-link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.form-interest {
+  display: flex;
+}
+
+@media only screen and (min-width: 360px) {
+  .intro .intro-items .intro-item {
+    width: 50%;
+  }
+
+  .intro .intro-items .intro-item:nth-child(odd) {
+    padding-right: 1em;
+  }
+
+  .intro .intro-items .intro-item:nth-child(even) {
+    padding-left: 1em;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .page-title,
+  .page-description {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  .intro .intro-items .intro-item {
+    font-size: 1em;
+  }
+
+  form .details {
+    display: flex;
+  }
+  
+  form .details p {
+    margin: 0;
+  }
+  form .details > * {
+    flex: 1;
+  }
+  
+  form .details > *:first-child {
+    padding-right: 1em;
+  }
+  
+  form .details > *:last-child {
+    padding-left: 1em;
+  }
+
+  .page-title,
+  .page-description {
+    width: 70%;
+  }
+
+  .line-break-640 {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .page-title,
+  .page-description {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .index .contact .contact-details {
+    display: flex;
+  }
+  .index .contact .contact-details section:first-child {
+    padding-right: 1em;
+  }
+  
+  .index .contact .contact-details section:last-child {
+    padding-left: 1em;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  body {
+    font-size: 18px;
+  }
+
+  .page-title {
+    font-size: 2em;
+  }
+  
+  .index .intro .intro-items {
+    margin: 3em -2em 0 -2em;
+  }
+
+  .index .intro .intro-items .intro-item {
+    flex: 1;
+    width: 25%;
+    padding: 0 2em;
+  }
+
+  .index .contact .contact-form {
+    padding: 2em 4em;
+  }
+
+  .index .contact .contact-details {
+    padding: 0 4em;
+  }
+
+  .page-title,
+  .page-description {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+  .site-footer .site-info {
+    display: flex;
+  }
+
+  .site-footer .site-info .description {
+    flex: 2;
+    padding-right: 2em;
+  }
+  
+  .site-footer .site-info .site-contact {
+    flex: 1;
+    max-width: 720px;
+  }
+
+  .site-footer .site-info .site-contact .email,
+  .site-footer .site-info .site-contact .phone {
+  padding: 0 3em 0 1em;
+  }
 }
