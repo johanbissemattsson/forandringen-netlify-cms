@@ -27,7 +27,7 @@ const Footer = () => (
       </nav>
       <div className='site-info'>
         <div className='site-description'>
-          <p><strong>Förändringen AB</strong> är en religiöst och partipolitiskt obunden organisation vars syfte är att hjälpa människor på flykt som kommer till Stockholm. Med hjälp av bidrag från privatpersoner och företag arbetar RWS för att ge den hjälp de behöver, både för stunden och på längre sikt.</p>
+          <p><strong>Förändringen AB</strong> lorem ipsum ad est dolores finalique voriste quantum ad est. Domingo florentin qualiste eros quantum domingo florentin. Pling plong. Hej.</p>
         </div>
         <div className='site-contact'>
           <div className='email'>
